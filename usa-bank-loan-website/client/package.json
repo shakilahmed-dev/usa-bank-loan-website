@@ -1,0 +1,22 @@
+{
+  "name": "usa-bank-loan-website",
+  "version": "1.0.0",
+  "description": "Professional bank loan website for USA customers",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-client && npm run install-server"
+  },
+  "keywords": ["bank", "loan", "usa", "financial"],
+  "author": "USA Bank Loans",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
